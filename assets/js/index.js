@@ -1,6 +1,36 @@
-const imagem = document.querySelector("#imgCarrosel");
+// Contagem caracteres do input do telefone
+const input = document.querySelector("#tel");
+const limiteTelefone = 11;
+
+input.addEventListener('keyup', function () {
+    let telefone = input.value.length;
+    let resto = limiteTelefone - telefone;
+    if (resto < 1) {
+        input.value = input.value.slice(0, limiteTelefone);
+        alert('Limite de caracteres atingido!');
+    }
+})
+
+// Contagem caracteres do textarea
+const textarea = document.querySelector("textarea");
+const caracteres = document.querySelector("#caracteres");
+const limite = 255;
+
+textarea.addEventListener('keyup', function () {
+    let texto = textarea.value;
+    let contagem = texto.length;
+    let resto = limite - contagem;
+    if (resto < 1) {
+        textarea.value = textarea.value.slice(0, limite);
+        alert('Limite de caracteres atingido!');
+        return caracteres.innerHTML = 0;
+    }
+    caracteres.innerHTML = resto;
+})
+
 
 // Imagens que aparecerão no carrosel
+const imagem = document.querySelector("#imgCarrosel");
 const carrosel = ["assets/img/makingPC.jpg", "assets/img/imgAcessories.png", "assets/img/imgSetup.jpg", "assets/img/insidePc.jpg", "assets/img/imgSetup2.jpg"];
 
 let posicaoCarrosel = 0;
@@ -34,3 +64,4 @@ perguntas.forEach(pergunta => {
         pergunta.children[0].classList.toggle('active')
     })
 })
+

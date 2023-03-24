@@ -31,13 +31,13 @@
 
             <!-- Formulário da mensagem -->
             <div>
-                <form action="#" id="formulario">
+                <form method="post" action="armazenamento.php" id="formulario">
                     <h4>Envie uma mensagem</h4>
                     <input type="text" name="nome" id="nome" placeholder="Nome:" required>
                     <input type="email" name="e-mail" id="e-mail" placeholder="E-mail:" required>
                     <input type="number" name="tel" id="tel" placeholder="DDD + Telefone:" required>
-                    <textarea name="mensagem" id="mensagem" cols="32" rows="5" placeholder="Como podemos te ajudar?"
-                        required></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="32" rows="5" placeholder="Como podemos te ajudar?" required></textarea>
+                    <p><span id="caracteres">255</span> caracteres restantes</p>
                     <input type="submit" value="Enviar mensagem" id="enviar">
                 </form>
             </div>
@@ -74,34 +74,34 @@
             <div id="container-servicos">
                 <div class="container">
                     <div class="servico">
-                        <img src="https://img.icons8.com/ios-filled/50/null/maintenance.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/null/maintenance.png" />
                         <h5>Montagem de PCs</h5>
                         <p>Pode escolher que a gente monta para você!</p>
                     </div>
                     <div class="servico">
-                        <img src="https://img.icons8.com/pastel-glyph/64/null/headset--v2.png"/>
+                        <img src="https://img.icons8.com/pastel-glyph/64/null/headset--v2.png" />
                         <h5>Acessórios</h5>
                         <p>Temos todos os tipos de acessórios para você personalizar o seu setup como quiser.</p>
                     </div>
                     <div class="servico">
-                        <img src="https://img.icons8.com/material-sharp/24/null/verified-account.png"/>
+                        <img src="https://img.icons8.com/material-sharp/24/null/verified-account.png" />
                         <h5>Garantia</h5>
                         <p>90 dias de garantia para PCs montados e 30 dias para acessórios adquiridos na Make PC.</p>
                     </div>
                 </div>
                 <div class="container">
                     <div class="servico">
-                        <img src="https://img.icons8.com/ios-filled/50/null/airplane-take-off.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/null/airplane-take-off.png" />
                         <h5>Para todo o Brasil!</h5>
                         <p>Vendemos e enviamos o seu produto seja onde quer que você queira.</p>
                     </div>
                     <div class="servico">
-                        <img src="https://img.icons8.com/ios-filled/50/null/cardboard-box.png"/>
+                        <img src="https://img.icons8.com/ios-filled/50/null/cardboard-box.png" />
                         <h5>Frete grátis*</h5>
                         <p>Compras acima de R$200 geram gratuidade no seu frete.</p>
                     </div>
                     <div class="servico">
-                        <img src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/null/external-zoom-tools-design-creatype-glyph-colourcreatype-2.png"/>
+                        <img src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/null/external-zoom-tools-design-creatype-glyph-colourcreatype-2.png" />
                         <h5>Rastreio de produto</h5>
                         <p>Rastreamos o seu produto desde a postagem nos Correios até sua casa.</p>
                     </div>
