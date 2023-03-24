@@ -8,13 +8,18 @@
 </head>
 
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <img src="assets/img/makePC.png" alt="Logotipo Make PC" />
         <span id="telefone">
-            (11)98765-4321
+            <a href="#"> (11)98765-4321 </a>
         </span>
     </header>
+
+    <!-- Conteúdo principal da página -->
     <main>
+
+        <!-- Seção de Apresentação do Produto -->
         <section id="produto">
             <div>
                 <img src="assets/img/imgAcessories.png" alt="" srcset="">
@@ -23,96 +28,124 @@
                     <p>Envie uma mensagem para nós e um de nossos atendentes lhe responderá em breve!</p>
                 </div>
             </div>
+
+            <!-- Formulário da mensagem -->
             <div>
-                <form action="#">
+                <form action="#" id="formulario">
                     <h4>Envie uma mensagem</h4>
-                    <input type="text" name="nome" id="nome" placeholder="Nome:">
-                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail:">
-                    <input type="tel" name="tel" id="tel" placeholder="DDD + Telefone:">
-                    <textarea name="mensagem" id="mensagem" cols="32" rows="8"
-                        placeholder="Como podemos te ajudar?"></textarea>
-                    <input type="submit" value="Enviar mensagem">
+                    <input type="text" name="nome" id="nome" placeholder="Nome:" required>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail:" required>
+                    <input type="number" name="tel" id="tel" placeholder="DDD + Telefone:" required>
+                    <textarea name="mensagem" id="mensagem" cols="32" rows="5" placeholder="Como podemos te ajudar?"
+                        required></textarea>
+                    <input type="submit" value="Enviar mensagem" id="enviar">
                 </form>
+            </div>
+        </section>
+
+        <!-- Seção quem somos -->
+        <section id="quem-somos">
+
+            <!-- Carrosel de imagens de setup -->
+            <img id="imgCarrosel" src="assets/img/imgSetup.jpg" alt="" />
+            <div>
+                <h2>Quem Somos</h2>
+                <p>
+                    Fundada no ano de 2023, a Make PC é uma empresa que trabalha com os mais variados produtos no setor
+                    de informática e
+                    equipamentos eletrônicos em geral, área bastante competitiva e em constante crescimento, onde
+                    qualidade, variedade,
+                    garantia e eficiência são critérios importantíssimos para total satisfação, confiança e preferência
+                    de nossos consumidores.
+                    Procuramos acima de tudo oferecer o que há de melhor, os melhores fornecedores, os mais atualizados
+                    produtos,
+                    o mais atencioso dos atendimentos, juntamente com os preços mais competitivos e atraentes do mercado
+                    para que nosso público encontre não apenas variedade e qualidade, mas também uma empresa que se
+                    preocupa
+                    com a felicidade e total satisfação de seus clientes e por que não, amigos!
+                </p>
 
             </div>
         </section>
-        <section id="quem-somos">
-            <h3>Quem Somos</h3>
-            <p>Falar sobre...</p>
-            <img src="assets/img/imgSetup.jpg" alt="">
-        </section>
+
+        <!-- Seção de serviços -->
         <section id="servicos">
-            Nossos serviços
-            <div class="container-servicos">
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Montagem de PCs</h5>
-                    <p>Pode escolher que a gente monta para você!</p>
+            <h2>Nossos serviços</h2>
+            <div id="container-servicos">
+                <div class="container">
+                    <div class="servico">
+                        <img src="https://img.icons8.com/ios-filled/50/null/maintenance.png"/>
+                        <h5>Montagem de PCs</h5>
+                        <p>Pode escolher que a gente monta para você!</p>
+                    </div>
+                    <div class="servico">
+                        <img src="https://img.icons8.com/pastel-glyph/64/null/headset--v2.png"/>
+                        <h5>Acessórios</h5>
+                        <p>Temos todos os tipos de acessórios para você personalizar o seu setup como quiser.</p>
+                    </div>
+                    <div class="servico">
+                        <img src="https://img.icons8.com/material-sharp/24/null/verified-account.png"/>
+                        <h5>Garantia</h5>
+                        <p>90 dias de garantia para PCs montados e 30 dias para acessórios adquiridos na Make PC.</p>
+                    </div>
                 </div>
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Acessórios</h5>
-                    <p>Temos todos os tipos de acessórios para você personalizar o seu setup como quiser.</p>
-                </div>
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Garantia</h5>
-                    <p>90 dias de garantia para PCs montados e 30 dias para acessórios adquiridos na Make PC.</p>
-                </div>
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Para todo o Brasil!</h5>
-                    <p>Vendemos e enviamos o seu produto seja onde quer que você queira.</p>
-                </div>
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Frete grátis*</h5>
-                    <p>Compras acima de R$200 geram gratuidade no seu frete.</p>
-                </div>
-                <div class="servico">
-                    <img src="" alt="">
-                    <h5>Rastreio de produto</h5>
-                    <p>Rastreamos o seu produto desde a postagem nos Correios até sua casa.</p>
+                <div class="container">
+                    <div class="servico">
+                        <img src="https://img.icons8.com/ios-filled/50/null/airplane-take-off.png"/>
+                        <h5>Para todo o Brasil!</h5>
+                        <p>Vendemos e enviamos o seu produto seja onde quer que você queira.</p>
+                    </div>
+                    <div class="servico">
+                        <img src="https://img.icons8.com/ios-filled/50/null/cardboard-box.png"/>
+                        <h5>Frete grátis*</h5>
+                        <p>Compras acima de R$200 geram gratuidade no seu frete.</p>
+                    </div>
+                    <div class="servico">
+                        <img src="https://img.icons8.com/external-creatype-glyph-colourcreatype/64/null/external-zoom-tools-design-creatype-glyph-colourcreatype-2.png"/>
+                        <h5>Rastreio de produto</h5>
+                        <p>Rastreamos o seu produto desde a postagem nos Correios até sua casa.</p>
+                    </div>
                 </div>
             </div>
-            <button>Enviar Mensagem</button>
+            <button onclick="redirecionarBotao()">Enviar Mensagem</button>
         </section>
         <section id="perguntas-frequentes">
-            <span class="perguntas">
+            <h2>Perguntas Frequentes</h2>
+            <span class="perguntas" onclick="mostrarResposta()">
                 Posso escolher as peças do meu PC?
-                <p>Pode sim, montamos o PC a seu gosto, mas também temos PCs prontos para venda se quiser, faça já seu
+                <p>- Pode sim, montamos o PC a seu gosto, mas também temos PCs prontos para venda se quiser, faça já seu
                     orçamento!</p>
             </span>
             <span class="perguntas">
                 Como funciona a garantia?
-                <p>Os PCs adquiridos na MakePC possuem garantia de 90 dias após a data de entrega, vale descatar que os
+                <p>- Os PCs adquiridos na MakePC possuem garantia de 90 dias após a data de entrega, vale descatar que os
                     PCs possuem lacres que não podem ser rompidos durante o período da garantia, ocasionando na perca da
                     mesma.</p>
             </span>
             <span class="perguntas">
                 Andamento do pedido
-                <p>O pedido deve ser processado e postado para envio em até 5 dias após a compensação do pagamento, em
-                    seguida será enviado um código de rastreio no e-mail cadastrado durante a compra</p>
+                <p>- O pedido deve ser processado e postado para envio em até 5 dias após a compensação do pagamento, em
+                    seguida será enviado um código de rastreio no e-mail cadastrado durante a compra.</p>
             </span>
             <span class="perguntas">
                 A placa mãe já vem com Bios atualizada para X processador?
-                <p>Não, a placa mãe acompanha a versão padrão de fábrica. Favor consultar o site do fabricante para
+                <p>- Não, a placa mãe acompanha a versão padrão de fábrica. Favor consultar o site do fabricante para
                     maiores detalhes.</p>
             </span>
             <span class="perguntas">
                 Troca e devolução
-                <p>Você tem 7 dias corridos, contados a partir do dia seguinte que seu produto foi entregue para
+                <p>- Você tem 7 dias corridos, contados a partir do dia seguinte que seu produto foi entregue para
                     solicitar a troca ou devolução.</p>
             </span>
         </section>
         <section id="chamada">
-            <div>
-                <h2></h2>
-                <p></p>
+            <div class="container">
+                <h2>Entre em contato conosco!</h2>
+                <p>Ainda com dúvidas? Nos envie uma mensagem e esclareceremos para você hoje mesmo!</p>
             </div>
-            <div>
-                <p></p>
-                <button>Enviar Mensagem</button>
+            <div class="container">
+                <h4>Chegou até aqui e ainda não nos mandou sua mensagem? Aproveite, temos atendente disponíveis todos os dias para te ajudar na melhor escolha!</h4>
+                <button onclick="redirecionarBotao()">Enviar Mensagem</button>
                 <p>Nossos atendentes vão entrar em contato com você ainda hoje</p>
             </div>
         </section>
@@ -121,6 +154,9 @@
         <p>Make PC © Todos os direitos reservados - 2023</p>
         <p>CNPJ 99.999.999 - 0009-99 - <a href="#">TERMOS DE USO</a></p>
     </footer>
+
+    <script src="assets/js/index.js" defer></script>
+
 </body>
 
 </html>
