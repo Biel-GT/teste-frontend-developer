@@ -61,7 +61,6 @@ main > #produto > div > img {
     width: 20em;
 }
 
-
 main > #produto > div:nth-child(2) {
     justify-content: center;
     flex-direction: column;
@@ -218,4 +217,107 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Estilos para dispositivos mobile */
+@media (min-width: 0px) and (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+
+    /* Estilização da área principal do produto */
+    main > #produto {
+        flex-direction: column;
+        height: 90vh;
+        padding: 1em;
+    }
+
+    main > #produto  > div {
+        width: 100%;
+    }
+
+    main > #produto > div > img {
+        width: 100%;
+    }
+
+    main > #produto > div:nth-child(2) {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Estilização do formulário */
+    #formulario {
+        align-items: center;
+        width: 95%;
+    }
+
+    /* Estilização da área quem somos */
+    main > #quem-somos {
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    main > #quem-somos > #imgCarrosel {
+        min-width: 50%;
+        height: 250px;
+    }
+
+    main > #quem-somos > div{
+        margin: 1em;
+    }
+
+    /* Estilização da área de serviços */
+    main > #servicos {
+        padding: 0.5em;
+    }
+
+    main > #servicos > h2 {
+        font-size: 2em;
+        padding: 1em 0em 0em;
+    }
+
+    /* Estilo dos botões da área de serviços e chamada */
+    button {
+        font-size: 1.3em;
+    }
+
+    /* Estilo da seção de perguntas */
+    main > #perguntas-frequentes > h2 {
+        font-size: 1.5em;
+    }
+
+    .perguntas {
+        width: 100%;
+        font-size: 1.15m;
+    }
+
+    /* Estilo para seção da última chamada */
+    #chamada {
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    #chamada > .container {
+        width: 90%;
+    }
+    
+    #chamada > .container > h2 {
+        font-size: 1.5em;
+    }
+
+    #chamada > .container > p {
+        font-size: 1.15em;
+    }
+
+    #chamada > .container:last-child {
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 0.3em;
+    }
+
+    #chamada > .container:last-child > h4 {
+        font-size: 1.3em;
+        font-weight: normal;
+    }
 }
